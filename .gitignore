@@ -2,3 +2,4 @@
 /dist/
 /nbproject/project.properties
 /src/Assets/query.txt
+/src/Model/OracleConnection.java
