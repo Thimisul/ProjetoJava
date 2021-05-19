@@ -1,0 +1,38 @@
+#AnchorPane{
+	-fx-background-color: linear-gradient(to left, rgb(160, 1, 1), rgb(247, 134, 134));
+	-fx-border-color: #C0C0C0;
+	-fx-border-width: 3px;
+}
+
+#lbTitulo{
+	-fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    -fx-font-family:"Arial";
+}
+
+.label{
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    -fx-font-family:"Arial";
+}
+
+.button{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    -fx-font-family:"Arial";
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.text-field{
+	-fx-background-color:#EFEBEB;
+}
+

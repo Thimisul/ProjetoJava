@@ -1,0 +1,21 @@
+.bgimage{
+	-fx-background-image: url("images/imagem_principal.jpg");
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto;
+	-fx-background-color:rgb(255, 255, 255);
+}
+
+#PaneMenuPrincipal{
+	-fx-background-color: linear-gradient(to left, rgb(160, 1, 1), rgb(247, 134, 134));
+	-fx-border-color: #C0C0C0;
+	-fx-border-width: 3px;
+	-fx-pref-width:1950;
+}
+
+#Menu{
+	-fx-font-size: 13px;
+}
+
+
+

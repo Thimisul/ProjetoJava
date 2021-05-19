@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" stylesheets="@../Assets/principal.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="PaneCabecalho" prefHeight="29.0" prefWidth="1921.0" stylesheets="@../Assets/tela_query_estilo.css">
+         <children>
+            <Label layoutX="7.0" layoutY="6.0" text="Lista de Usuarios" />
+         </children>
+      </Pane>
+      <Label layoutX="28.0" layoutY="48.0" text="Filtro" />
+      <TextField layoutX="65.0" layoutY="44.0" />
+      <TableView layoutX="28.0" layoutY="93.0" prefHeight="285.0" prefWidth="455.0">
+        <columns>
+          <TableColumn prefWidth="150.0" text="Name" />
+          <TableColumn minWidth="0.0" prefWidth="294.0" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

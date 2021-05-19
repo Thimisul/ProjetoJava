@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="572.0" prefWidth="936.0" styleClass="bgimage" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaPrincipalController">
+   <children>
+      <Pane fx:id="PaneMenuPrincipal" layoutY="2.0" prefHeight="29.0" prefWidth="1457.0" stylesheets="@../Assets/tela_principal_estilo.css" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar fx:id="Menu">
+              <menus>
+                <Menu mnemonicParsing="false" text="Arquivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gráficos">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sair">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+      <VBox layoutX="14.0" layoutY="29.0" prefHeight="539.0" prefWidth="101.0" stylesheets="@../Assets/principal.css">
+         <children>
+            <Button fx:id="btNewClient" alignment="CENTER" mnemonicParsing="false" onAction="#openNewClientFxml" prefHeight="70.0" prefWidth="101.0" text="Cadastro Cliente" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/images/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btNewUser" mnemonicParsing="false" onAction="#openNewUserFxml" prefHeight="70.0" prefWidth="101.0" text="Cadastro Usuario" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/images/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btListClients" mnemonicParsing="false" onAction="#openListClientsFxml" prefHeight="70.0" prefWidth="101.0" text="Lista CLientes" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btListUsers" mnemonicParsing="false" onAction="#openListUsersFxml" prefHeight="70.0" prefWidth="101.0" text="Lista Usuarios" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btQuery" mnemonicParsing="false" onAction="#openQueryesfxml" prefHeight="70.0" prefWidth="101.0" text="Query" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btGraphics" mnemonicParsing="false" onAction="#openGraphicsFxml" prefHeight="70.0" prefWidth="101.0" text="Graficos" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btLogout" mnemonicParsing="false" onAction="#logout" prefHeight="70.0" prefWidth="101.0" text="Logout" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../Assets/tela_principal_estilo.css" />
+      <URL value="@tela_principal_estilo.css" />
+   </stylesheets>
+</AnchorPane>
